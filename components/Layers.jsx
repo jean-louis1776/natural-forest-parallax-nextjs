@@ -1,10 +1,7 @@
 import React from "react"
-import { useRouter } from "next/router"
 import Link from "next/link"
 
 const Layers = () => {
-  const router = useRouter()
-
   return (
     <div className="h-screen min-h-[500px] transform-3d rotate-x-[var(--move-y)] rotate-y-[var(--move-x)] will-change-transform transition-transform ease-[var(--transition-timing-function)] duration-[var(--transition-duration)]">
       <div className="layer-bg bg-layer-1 -translate-z-[55px] scale-[1.06]" />

@@ -7,7 +7,7 @@ export const mouseMove = (e) => {
   })
 }
 
-export const mouseLeave = (e) => {
+export const mouseLeave = () => {
   Object.assign(document.documentElement, {
     style: `
     --move-x: 0deg;

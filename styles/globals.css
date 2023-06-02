@@ -49,10 +49,6 @@
     font-family: Arial;
   }
 
-  .rotate-x-y {
-    transform: rotateX(var(--move-y)) rotateY(var(--move-x));
-  }
-
   .layer-bg {
     @apply absolute -inset-[5vw] bg-cover bg-center flex items-center justify-center;
   }
