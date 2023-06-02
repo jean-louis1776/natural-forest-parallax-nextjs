@@ -4,8 +4,7 @@ import Head from "next/head"
 import "../libs/rain"
 import { mouseLeave, mouseMove } from "../libs/mouseTracking"
 
-import Layers from "../components/Layers"
-import CustomCursor from "../components/CustomCursor"
+import { CustomCursor, Layers } from "../components/"
 
 const Home = () => {
   return (

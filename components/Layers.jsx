@@ -1,6 +1,10 @@
 import React from "react"
+import { useRouter } from "next/router"
+import Link from "next/link"
 
 const Layers = () => {
+  const router = useRouter()
+
   return (
     <div className="h-screen min-h-[500px] transform-3d rotate-x-[var(--move-y)] rotate-y-[var(--move-x)] will-change-transform transition-transform ease-[var(--transition-timing-function)] duration-[var(--transition-duration)]">
       <div className="layer-bg bg-layer-1 -translate-z-[55px] scale-[1.06]" />
@@ -18,9 +22,14 @@ const Layers = () => {
             using Next.JS & TailwindCSS
           </p>
 
-          <button className="btn font-semibold uppercase text-[calc(var(--index)*.71)] -tracking-[.02vw] leading-none px-[calc(var(--index)*1.25)] py-[calc(var(--index)*.7)] bg-transparent rounded-full border-gray-border border-[3px] mt-[calc(var(--index)*2.5)] select-none">
-            Start Learning
-          </button>
+          <Link
+            href="https://github.com/jean-louis1776/natural-forest-parallax-nextjs"
+            passHref
+            target="_blank">
+            <button className="btn font-semibold uppercase text-[calc(var(--index)*.71)] -tracking-[.02vw] leading-none px-[calc(var(--index)*1.25)] py-[calc(var(--index)*.7)] bg-transparent rounded-full border-gray-border border-[3px] mt-[calc(var(--index)*2.5)] select-none">
+              Start Learning
+            </button>
+          </Link>
         </div>
       </div>
 
