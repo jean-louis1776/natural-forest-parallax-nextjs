@@ -19,10 +19,7 @@ const Layers = () => {
             using Next.JS & TailwindCSS
           </p>
 
-          <Link
-            href="https://github.com/jean-louis1776/natural-forest-parallax-nextjs"
-            passHref
-            target="_blank">
+          <Link href="https://youtu.be/r_BMMlkfW0c" passHref target="_blank">
             <button className="btn font-semibold uppercase text-[calc(var(--index)*.71)] -tracking-[.02vw] leading-none px-[calc(var(--index)*1.25)] py-[calc(var(--index)*.7)] bg-transparent rounded-full border-gray-border border-[3px] mt-[calc(var(--index)*2.5)] select-none">
               Start Learning
             </button>
